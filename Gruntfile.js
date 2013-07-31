@@ -113,19 +113,21 @@ module.exports = function (grunt) {
             }
         },
         less: {
-            options: {
-                lessDir: '<%= yeoman.app %>/styles',
-                cssDir: '.tmp/styles',
-                imagesDir: '<%= yeoman.app %>/images',
-                javascriptsDir: '<%= yeoman.app %>/scripts',
-                fontsDir: '<%= yeoman.app %>/styles/fonts',
-                importPath: 'app/components',
-                relativeAssets: true
+            dist: {
+                options: {
+                    paths: ['app/components'],
+                    yuicompress: true
+                },
+                files: {
+                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less'
+                }
             },
-            dist: {},
             server: {
                 options: {
                     debugInfo: true
+                },
+                files: {
+                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less', 
                 }
             }
         },
@@ -238,7 +240,6 @@ module.exports = function (grunt) {
                 'less:server'
             ],
             test: [
-                'less'
             ],
             dist: [
                 'less:dist',
