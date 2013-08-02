@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         yeoman: yeomanConfig,
         watch: {
             less: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.{less}'],
+                files: ['<%= yeoman.app %>/styles/main.less'],
                 tasks: ['less:server']
             },
             livereload: {
@@ -124,10 +124,11 @@ module.exports = function (grunt) {
             },
             server: {
                 options: {
+                    paths: ['app/components'],
                     debugInfo: true
                 },
                 files: {
-                    '.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.less', 
+                    '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/styles/main.less', 
                 }
             }
         },
@@ -237,12 +238,10 @@ module.exports = function (grunt) {
         },
         concurrent: {
             server: [
-                'less:server'
             ],
             test: [
             ],
             dist: [
-                'less:dist',
                 'imagemin',
                 'svgmin',
                 'htmlmin'
@@ -260,6 +259,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'less:server',
             'livereload-start',
             'connect:livereload',
             'open',
@@ -269,6 +269,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', [
         'clean:server',
+        'less',
         'concurrent:test',
         'connect:test',
         'mocha'
@@ -276,6 +277,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'less:dist',
         'useminPrepare',
         'concurrent:dist',
         'cssmin',

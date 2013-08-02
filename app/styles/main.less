@@ -1,6 +1,139 @@
-@import '../components/bootstrap/less/bootstrap';
-@import '../components/bootstrap/less/responsive-utilities';
+//@import '../components/bootstrap/less/bootstrap';
+//@import '../components/bootstrap/less/responsive-utilities';
+
+@import 'default.css';
+@import 'flexslider.css';
+@import 'fixed-navigation.css';
+
+@white: #fff;
+@black: #000;
+@yellow: #ffa;
+@grey: #9E9E9E;
+@darkGrey: #2E2E2E;
 
 body {
-  background-color: #FF9900;
+  background-color: @white;
+}
+
+#header {
+  background-color: @white;
+  box-shadow: none;
+}
+
+.row {
+  background: none repeat scroll 0 0 @white;
+  color: @black;
+  a,
+  h1,
+  .subHeading {
+    color: @black;
+    text-shadow: none;
+  }
+}
+
+.news h3 {
+  background: none;
+  background-color: @darkGrey;
+  a {
+    color: @white;
+    text-shadow: none;
+  }
+}
+
+#mainNav a:hover span,
+#mainNav li.active span {
+  background: none;
+  background-color: @darkGrey;
+  border-radius: 0;
+  transition: background 0.5s ease 0s;
+}
+#mainNav a {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  span {
+    background: none;
+    background-color: @grey;
+    border: none;
+    color: @white;
+    text-shadow: none;
+    border-radius: 0;
+  }
+}
+
+.grey, .row {
+  h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .imgHolder {
+    border: 1px solid @black;
+    padding: 0;
+  }
+}
+
+.textField {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  input, textarea {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: @white;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  border: none;
+  padding: 0;
+
+  span {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  &:hover span {
+    
+  }
+}
+
+.buttons > span em {
+  background: none;
+  background-color: @white;
+}
+
+.btnGreen span,
+.btnBlue span {
+  background: none;
+}
+
+.btnSmall {
+  background: none;
+  background-color: @grey;
+  border: none;
+  span {
+    background: none;
+    background-color: @grey;
+    color: @white;
+    text-shadow: none;
+    border-radius: 0;
+    transition: background 0.5s ease 0s;
+  }
+  &:hover span {
+    background: none;
+    background-color: @darkGrey;
+    color: @white;
+  }
+}
+
+#caracteristicas {
+  background-color: #ddd;
+}
+#flota {
+
+}
+#footer {
+  color: @black;
 }
