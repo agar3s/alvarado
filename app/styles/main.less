@@ -15,6 +15,23 @@ body {
   background-color: @white;
 }
 
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: @grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+  color: @grey;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+  color: @grey;
+}
+:-ms-input-placeholder {  
+  font-style: italic;
+  color: @grey;
+}
+
 #header {
   background-color: @white;
   box-shadow: none;
@@ -75,11 +92,12 @@ body {
 .textField {
   box-shadow: none;
   border-radius: 0;
-  border: none;
+  background: none;
   input, textarea {
     box-shadow: none;
     border-radius: 0;
     border-color: @white;
+    padding: 0;
   }
 }
 
@@ -136,4 +154,8 @@ body {
 }
 #footer {
   color: @black;
+}
+#map {
+  border: none;
+  background-color: @white;
 }
