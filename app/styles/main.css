@@ -5,53 +5,150 @@
 @import 'fixed-navigation.css';
 body {
   background-color: #ffffff;
+  font-family: 'PT Sans';
+}
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #444;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+
+  font-style: italic;
+  color: #444;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+
+  font-style: italic;
+  color: #444;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+  color: #444;
 }
 #header {
   background-color: #ffffff;
   box-shadow: none;
+  padding: 0;
+  height: 100px;
+  border-bottom: 1px solid #b0b0b0;
 }
 .row {
   background: none repeat scroll 0 0 #ffffff;
   color: #000000;
+  padding: 2.9em 0 1.45em;
 }
 .row a,
 .row h1,
 .row .subHeading {
-  color: #000000;
+  color: #404040;
   text-shadow: none;
+  font-size: 2.1425em;
+  border-bottom: 0.0333px solid #b0b0b0;
+  display: table;
+  margin: 0 auto 0.5em;
+  padding: 0 0.3333em 0.3333em;
+}
+.news {
+  font-family: 'PT Sans';
+}
+.news > div {
+  border: none;
 }
 .news h3 {
   background: none;
-  background-color: #2e2e2e;
+  border-top: none;
+  font-size: 2.143em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #404040;
+  line-height: 1em;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
 }
-.news h3 a {
-  color: #ffffff;
-  text-shadow: none;
+.news .content {
+  font-size: 1.125em;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  color: #2e2e2e;
 }
-#mainNav a:hover span,
-#mainNav li.active span {
-  background: none;
-  background-color: #2e2e2e;
-  border-radius: 0;
-  transition: background 0.5s ease 0s;
+#mainNav {
+  font-family: 'PT Sans';
 }
 #mainNav a {
   background: none;
   border-radius: 0;
   box-shadow: none;
+  font-size: 1.2855em;
+  margin: 0;
+  padding: 0;
 }
 #mainNav a span {
   background: none;
-  background-color: #9e9e9e;
+  text-transform: uppercase;
+  font-weight: 200;
   border: none;
-  color: #ffffff;
+  color: #404040;
   text-shadow: none;
   border-radius: 0;
+  line-height: 100%;
+}
+#mainNav .logo {
+  display: block;
+  float: left;
+  margin-top: 17px;
+}
+#mainNav ul {
+  display: block;
+  float: right;
+}
+#mainNav ul span {
+  margin-top: 40px;
+}
+#mainNav ul li {
+  margin: 0;
+}
+#mainNav a:hover span,
+#mainNav li.active span {
+  background: none;
+  color: #000000;
+  transition: background 0.5s ease 0s;
+}
+.gallery {
+  width: 100%;
+}
+.flex-direction-nav li a {
+  border-bottom-width: 0;
+  left: -50;
+  padding: 0;
+  width: 22px;
+  height: 26px;
+}
+.flex-direction-nav li a.next {
+  background-position: -22px 0;
+  right: 2.5%;
+}
+.flex-direction-nav li a.next:hover,
+.flex-direction-nav li a.next:active {
+  background-position: -22px 0;
+  right: 2.5%;
+}
+.flex-direction-nav li a.prev {
+  left: 2.5%;
+}
+.flex-direction-nav li a.prev:hover,
+.flex-direction-nav li a.prev:active {
+  background-position: 0;
+  left: 2.5%;
 }
 .grey h2,
 .row h2 {
-  color: black;
+  color: #404040;
+  font-size: 2.1425em;
+  text-transform: uppercase;
   text-shadow: none;
+  font-family: 'PT Sans';
 }
 .grey .imgHolder,
 .row .imgHolder {
@@ -61,13 +158,15 @@ body {
 .textField {
   box-shadow: none;
   border-radius: 0;
-  border: none;
+  background: none;
 }
 .textField input,
 .textField textarea {
   box-shadow: none;
   border-radius: 0;
   border-color: #ffffff;
+  padding: 0;
+  font-family: 'PT Sans';
 }
 .btn {
   border-radius: 0;
@@ -84,22 +183,39 @@ body {
   background: none;
   background-color: #ffffff;
 }
+a.btnGreen {
+  padding: 0;
+  transition: background 0.5s ease 0s;
+  background-color: #7c7c7c;
+}
+a.btnGreen:hover {
+  background-color: #2e2e2e;
+}
 .btnGreen span,
 .btnBlue span {
+  font-family: 'PT Sans';
   background: none;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.31), 0 2px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0 10%;
+  line-height: 2.5em;
 }
 .btnSmall {
   background: none;
-  background-color: #9e9e9e;
+  background-color: #7c7c7c;
   border: none;
 }
 .btnSmall span {
+  font-family: 'PT Sans';
   background: none;
-  background-color: #9e9e9e;
+  background-color: #7c7c7c;
   color: #ffffff;
-  text-shadow: none;
   border-radius: 0;
   transition: background 0.5s ease 0s;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.31), 0 2px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5);
 }
 .btnSmall:hover span {
   background: none;
@@ -107,8 +223,26 @@ body {
   color: #ffffff;
 }
 #caracteristicas {
-  background-color: #ddd;
+  background-color: #ecebeb;
+}
+#contactanos {
+  font-size: 1.2852em;
+}
+#contactanos .phone {
+  margin: 1em 0;
+}
+#contactanos .office {
+  padding: 1em 0;
 }
 #footer {
   color: #000000;
+}
+#map {
+  border: none;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 504px) {
+  .logo {
+    display: none;
+  }
 }

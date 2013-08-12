@@ -8,63 +8,167 @@
 @white: #fff;
 @black: #000;
 @yellow: #ffa;
-@grey: #9E9E9E;
+@grey: #7c7c7c;
 @darkGrey: #2E2E2E;
+@greyf: #404040;
+@softGrey: #b0b0b0;
 
 body {
   background-color: @white;
+  font-family: 'PT Sans';
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #444;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+  color: #444;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+  color: #444;
+}
+:-ms-input-placeholder {  
+  font-style: italic;
+  color: #444;
 }
 
 #header {
   background-color: @white;
   box-shadow: none;
+  padding: 0;
+  height: 100px;
+  border-bottom: 1px solid @softGrey;
 }
 
 .row {
   background: none repeat scroll 0 0 @white;
   color: @black;
+  padding: 2.9em 0 1.45em;
   a,
   h1,
   .subHeading {
-    color: @black;
+    color: @greyf;
     text-shadow: none;
+    font-size: 2.1425em;
+    border-bottom: 0.0333px solid @softGrey;
+    display: table;
+    margin: 0 auto 0.5em;
+    padding: 0 0.3333em 0.3333em; 
   }
 }
 
-.news h3 {
-  background: none;
-  background-color: @darkGrey;
-  a {
-    color: @white;
-    text-shadow: none;
-  }
-}
-
-#mainNav a:hover span,
-#mainNav li.active span {
-  background: none;
-  background-color: @darkGrey;
-  border-radius: 0;
-  transition: background 0.5s ease 0s;
-}
-#mainNav a {
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  span {
-    background: none;
-    background-color: @grey;
+.news {
+  font-family: 'PT Sans';
+  
+  &>div {
     border: none;
-    color: @white;
-    text-shadow: none;
+  }
+  h3 {
+    background: none;
+    border-top: none;
+    font-size: 2.143em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: @greyf;
+    line-height: 1em;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+  }
+  .content {
+    font-size: 1.125em;
+    letter-spacing: 0.05em;
+    //font-weight: 100;
+    line-height: 1.1em;
+    color: @darkGrey;
+  }
+}
+
+#mainNav {
+  font-family: 'PT Sans';
+  
+  a {
+    background: none;
     border-radius: 0;
+    box-shadow: none;
+    font-size: 1.2855em;
+    margin: 0;
+    padding: 0;
+
+    span {
+      background: none;
+      text-transform: uppercase;
+      font-weight: 200;
+      border: none;
+      color: @greyf;
+      text-shadow: none;
+      border-radius: 0;
+      line-height: 100%;
+    }
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    margin-top: 17px;
+  }
+
+  ul {
+    display: block;
+    float: right;
+    span {
+      margin-top: 40px; 
+    }
+    li {
+      margin: 0;
+    }
+  }
+
+  a:hover span,
+  li.active span {
+    background: none;
+    color: @black;
+    transition: background 0.5s ease 0s;
+  }
+}
+
+.gallery {
+  width: 100%;
+}
+.flex-direction-nav li{
+  a {
+    border-bottom-width: 0;
+    left: -50;
+    padding: 0;
+    width: 22px;
+    height: 26px;
+    &.next {
+      background-position: -22px 0;
+      right: 2.5%;
+      &:hover, &:active {
+        background-position: -22px 0;
+        right: 2.5%;
+      }
+    }
+    &.prev {
+      left: 2.5%;
+      &:hover, &:active {
+        background-position: 0;
+        left: 2.5%;
+      }
+    }
   }
 }
 
 .grey, .row {
   h2 {
-    color: black;
+    color: @greyf;
+    font-size: 2.1425em;
+    text-transform: uppercase;
     text-shadow: none;
+    font-family: 'PT Sans';
   }
   .imgHolder {
     border: 1px solid @black;
@@ -75,11 +179,13 @@ body {
 .textField {
   box-shadow: none;
   border-radius: 0;
-  border: none;
+  background: none;
   input, textarea {
     box-shadow: none;
     border-radius: 0;
     border-color: @white;
+    padding: 0;
+    font-family: 'PT Sans';
   }
 }
 
@@ -103,10 +209,26 @@ body {
   background: none;
   background-color: @white;
 }
+a.btnGreen {
+  padding: 0;
+  transition: background 0.5s ease 0s;
+  background-color: @grey;
+  &:hover{
+    background-color: @darkGrey;
+  }
+}
 
 .btnGreen span,
 .btnBlue span {
+  font-family: 'PT Sans';
   background: none;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.31), 0 2px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0 10%;
+  line-height: 2.5em;
 }
 
 .btnSmall {
@@ -114,12 +236,13 @@ body {
   background-color: @grey;
   border: none;
   span {
+    font-family: 'PT Sans';
     background: none;
     background-color: @grey;
     color: @white;
-    text-shadow: none;
     border-radius: 0;
     transition: background 0.5s ease 0s;
+    text-shadow: 0 0 rgba(0, 0, 0, 0.31), 0 2px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5);
   }
   &:hover span {
     background: none;
@@ -129,11 +252,33 @@ body {
 }
 
 #caracteristicas {
-  background-color: #ddd;
+  background-color: #ecebeb;
 }
 #flota {
 
 }
+#contactanos {
+  font-size: 1.2852em;
+  .phone {
+    margin: 1em 0;
+  }
+  .mail {
+
+  }
+  .office {
+    padding: 1em 0;
+  }
+}
 #footer {
   color: @black;
+}
+#map {
+  border: none;
+  background-color: @white;
+}
+
+@media screen and (max-width: 504px){
+  .logo {
+    display: none;
+  }
 }
