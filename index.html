@@ -10,39 +10,101 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, maximum-scale = 1, minimum-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/f575c603.main.css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
     <script src="scripts/vendor/f7f27360.modernizr.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+
+    <link rel="stylesheet" href="styles/8c039d4f.main.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body>
     <div id="pagewidth">
-        <header id="header">
-            <div class="center">
-                <nav id="mainNav">
-                    <span class="logo"><a href="#pagewidth"><img width="182px" src="images/ce50fdd7.Logo_TransAlvarado.png"></a></span>
-                    <ul>
-                        <li><a href="#pagewidth"><span>Inicio</span></a></li>
-                        <li><a href="#caracteristicas"><span>Servicio</span></a></li>
-                        <li><a href="#flota"><span>Flota</span></a></li>
-                        <li><a href="#contactanos"><span>Contacto</span></a></li>
-                    </ul>
-                </nav>
+        <!-- Header -->
+        <header id="header" class="container">
+            <div class="header row-fluid">
+                <div class="span12">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                            <h1>
+                                <a class="brand" href="#pagewidth"><img width="182px" src="images/ce50fdd7.Logo_TransAlvarado.png"></a>
+                            </h1>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav pull-right">
+                                    <li class="current-page">
+                                        <a href="#pagewidth"><i class="icon-home"></i><br>Inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#caracteristicas"><i class="icon-tasks"></i><br>Servicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#flota"><i class="icon-comments"></i><br>Flota</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contactanos"><i class="icon-group"></i><br>Contactenos</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html"><i class="icon-user"></i><br>Acerca</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <div id="content">
             <section class="row">
-                <div class="center">
-                    <strong class="subHeading">Eficacia en la Gesti&oacute;n Log&iacute;stica de Transporte </strong>
-                    <div class="gallery">
-                        <ul class="slides">
-                            <li><img src="images/a1350cb8.trans1.jpg" alt="image"></li>
-                            <li><img src="images/fb95695a.trans4.jpg" alt="image"></li>
-                            <li><img src="images/903ac720.trans2.jpg" alt="image"></li>
-                            <li><img src="images/bbc0bd18.trans3.jpg" alt="image"></li>
-                        </ul>
-                    </div>
-                    <div class="buttons">
+                        <!-- Slider -->
+                <div class="slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span10 offset1">
+                                <strong class="subHeading">Eficacia en la Gesti&oacute;n Log&iacute;stica de Transporte </strong>
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li data-thumb="images/a1350cb8.trans1.jpg">
+                                            <img src="images/a1350cb8.trans1.jpg">
+                                            <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </li>
+                                        <li data-thumb="images/903ac720.trans2.jpg">
+                                            <img src="images/903ac720.trans2.jpg">
+                                            <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                        </li>
+                                        <li data-thumb="images/bbc0bd18.trans3.jpg">
+                                            <img src="images/bbc0bd18.trans3.jpg">
+                                            <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </li>
+                                        <li data-thumb="images/fb95695a.trans4.jpg">
+                                            <img src="images/fb95695a.trans4.jpg">
+                                            <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="buttons">
                         <a href="#contactanos" class="btn btnGreen"><span>Contactar a un Agente</span></a>
+                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -175,7 +237,7 @@
         <![endif]-->
 
 
-    <script src="scripts/47635f3f.main.js"></script>
+    <script src="scripts/d658fcb6.main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="text/javascript">
         function initialize(){
