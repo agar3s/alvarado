@@ -2,14 +2,14 @@ jQuery(function (){
 	jQuery('.gallery').flexslider({controlNav:false});
 	//initIeFunctions();
 	
-	var navItems = jQuery('#mainNav li');
+	var navItems = jQuery('.nav li');
 	navItems.find('a').click(function (){
-		navItems.removeClass('active');
-		this.parentNode.className += ' active';
+		navItems.removeClass('current-page');
+		this.parentNode.className += ' current-page';
 	});
 	
 	initScrollNav({
-		nav:'#mainNav a'
+		nav:'.nav a'
 	});
 
 	initValidation();

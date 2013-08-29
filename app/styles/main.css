@@ -1,8 +1,18 @@
+@import 'bootstrap.min.css';
+
+@import 'prettyPhoto.css';
+
 @import 'default.css';
 
 @import 'flexslider.css';
 
 @import 'fixed-navigation.css';
+
+@import 'flexslider.css';
+
+@import 'font-awesome.css';
+
+@import 'style.css';
 body {
   background-color: #ffffff;
   font-family: 'PT Sans';
@@ -31,8 +41,12 @@ body {
   background-color: #ffffff;
   box-shadow: none;
   padding: 0;
-  height: 100px;
+  height: 97px;
   border-bottom: 1px solid #b0b0b0;
+}
+.header {
+  margin: 0 auto;
+  max-width: 975px;
 }
 .row {
   background: none repeat scroll 0 0 #ffffff;
