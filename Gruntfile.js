@@ -128,7 +128,7 @@ module.exports = function (grunt) {
                     debugInfo: true
                 },
                 files: {
-                    '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/styles/main.less', 
+                    '<%= yeoman.app %>/styles/main.less': '<%= yeoman.app %>/styles/main.less', 
                 }
             }
         },
@@ -150,7 +150,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/*'
+                        '<%= yeoman.dist %>/fonts/*'
                     ]
                 }
             }
@@ -231,7 +231,7 @@ module.exports = function (grunt) {
                         '*.{ico,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/*'
+                        'fonts/*'
                     ]
                 }]
             }
