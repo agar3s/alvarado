@@ -13,7 +13,6 @@
 @import 'style.css';
 body {
   background-color: #ffffff;
-  font-family: 'PT Sans';
 }
 ::-webkit-input-placeholder {
   font-style: italic;
@@ -40,14 +39,13 @@ body {
   box-shadow: none;
   padding: 0;
   height: 97px;
-  border-bottom: 1px solid #b0b0b0;
 }
 .header {
   margin: 0 auto;
-  max-width: 975px;
+  max-width: 1170px;
 }
 .row {
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 transparent;
   color: #000000;
   padding: 2.9em 0 1.45em;
 }
@@ -63,7 +61,7 @@ body {
   padding: 0 0.3333em 0.3333em;
 }
 .news {
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
 }
 .news > div {
   border: none;
@@ -86,7 +84,7 @@ body {
   color: #2e2e2e;
 }
 #mainNav {
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
 }
 #mainNav a {
   background: none;
@@ -127,6 +125,9 @@ body {
   color: #000000;
   transition: background 0.5s ease 0s;
 }
+.slider {
+  background-color: #F4F4F4;
+}
 .gallery {
   width: 100%;
 }
@@ -158,7 +159,7 @@ body {
   font-size: 2.1425em;
   text-transform: uppercase;
   text-shadow: none;
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
 }
 .grey .imgHolder,
 .row .imgHolder {
@@ -174,9 +175,10 @@ body {
 .textField textarea {
   box-shadow: none;
   border-radius: 0;
-  border-color: #ffffff;
+  border-color: transparent;
+  background-color: transparent;
   padding: 0;
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
 }
 .btn {
   border-radius: 0;
@@ -196,22 +198,23 @@ body {
 a.btnGreen {
   padding: 0;
   transition: background 0.5s ease 0s;
-  background-color: #7c7c7c;
+  background-color: #00326D;
 }
 a.btnGreen:hover {
   background-color: #2e2e2e;
 }
 .btnGreen span,
 .btnBlue span {
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
   background: none;
-  font-size: 0.8em;
+  font-size: 14px;
   font-weight: 200;
   text-shadow: 0 0 rgba(0, 0, 0, 0.31), 0 2px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0.5);
   letter-spacing: 0.05em;
   margin: 0;
-  padding: 0 10%;
+  padding: 0 20%;
   line-height: 2.5em;
+  text-transform: uppercase;
 }
 .btnSmall {
   background: none;
@@ -219,7 +222,7 @@ a.btnGreen:hover {
   border: none;
 }
 .btnSmall span {
-  font-family: 'PT Sans';
+  font-family: 'Open Sans';
   background: none;
   background-color: #7c7c7c;
   color: #ffffff;
@@ -232,11 +235,44 @@ a.btnGreen:hover {
   background-color: #2e2e2e;
   color: #ffffff;
 }
-#caracteristicas {
-  background-color: #ecebeb;
+#slogan {
+  padding: 54px 0;
+}
+#slogan h1 {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-size: 2em;
+  color: #5D5D5D;
+}
+#slogan h4 {
+  font-weight: 400;
+  font-family: 'Open Sans';
+  font-style: italic;
+}
+.dotted h2 {
+  color: #5D5D5D;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 2em;
+  display: inline-block;
+  padding: 0 2%;
+  background-color: #FFF;
+  font-weight: 400;
+  font-family: 'Noto Serif';
+}
+.portfolio {
+  margin: 0 0 20px;
 }
 #contactanos {
   font-size: 1.2852em;
+}
+#contactanos h2 {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  color: #5D5D5D;
+  font-size: 1em;
+  text-align: left;
 }
 #contactanos .phone {
   margin: 1em 0;
