@@ -553,7 +553,9 @@ footer .social a:hover { background-position: left top; }
 .page-title h2 {
     display: inline;
     margin-left: 10px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif';
+    text-transform: uppercase;
+    font-weight: 400;
     font-size: 24px;
     color: #5d5d5d;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .7);

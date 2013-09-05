@@ -262,11 +262,10 @@ a.btnGreen:hover {
     font-family: 'Noto Serif';
   }
 }
-.portfolio {
-  margin: 0 0 20px; 
-}
 #caracteristicas {
-  
+  .portfolio {
+    margin: 0 0 20px; 
+  }
 }
 #contactanos {
   font-size: 1.2852em;
@@ -292,10 +291,33 @@ a.btnGreen:hover {
   border: none;
   background-color: #ffffff;
 }
+
+.portfolio-img li {
+  &:nth-child(4n+1){
+    margin-left: 0;
+  }
+}
+
+.portfolio-img .work a {
+  display: block;
+  height: 160px;
+  max-height: 160px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 784px) {
-  #header{
+  #header {
     height: auto;
     position: relative; 
+    max-height: none;
+  }
+  .navbar .btn-navbar {
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+  }
+  #content {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 504px) {
