@@ -62,7 +62,7 @@ strong { font-weight: bold; }
     width: 280px;
     height: 80px;
     padding: 8px 0;
-    background: url("../images/logo.jpg") no-repeat scroll center / contain transparent;
+    background: url("../images/logot.png") no-repeat scroll center / contain transparent;
 }
 
 .header ul.nav {
